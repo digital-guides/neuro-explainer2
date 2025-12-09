@@ -9,13 +9,13 @@ const FunctionsChips = () => {
   ];
 
   return (
-    <section className="py-10 px-4">
+    <section className="py-4 px-4">
       <div className="max-w-2xl mx-auto">
-        <h3 className="font-serif text-xl md:text-2xl text-primary text-center mb-6">
+        <h3 className="font-serif text-xl md:text-2xl text-primary text-center mb-3">
           Funciones afectadas
         </h3>
         
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-2">
           {functions.map((func, index) => (
             <span
               key={index}

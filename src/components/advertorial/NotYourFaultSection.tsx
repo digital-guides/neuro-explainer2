@@ -8,10 +8,10 @@ const NotYourFaultSection = () => {
   ];
 
   return (
-    <section className="py-10 px-4">
+    <section className="py-2 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Image above the section */}
-        <div className="mb-8">
+        <div className="mb-3">
           <img 
             src={notYourFaultImage} 
             alt="Madre e hija - patrones emocionales" 
@@ -19,29 +19,29 @@ const NotYourFaultSection = () => {
           />
         </div>
 
-        <div className="bg-salmon-light rounded-xl p-6 md:p-8 border-l-4 border-salmon">
-          <h2 className="font-serif text-3xl md:text-4xl text-salmon italic mb-6">
+        <div className="bg-salmon-light rounded-xl p-5 md:p-6 border-l-4 border-salmon">
+          <h2 className="font-serif text-3xl md:text-4xl text-orange-600 italic mb-3">
             No es tu culpa
           </h2>
 
-          <p className="text-foreground mb-4">
+          <p className="text-foreground mb-2">
             Los estudios de <strong className="text-primary">Porges</strong>, <strong className="text-primary">Van der Kolk</strong> y <strong className="text-primary">Barrett</strong> muestran que:
           </p>
 
-          <ul className="space-y-3 mb-6">
+          <ul className="space-y-1 mb-3">
             {points.map((point, index) => (
-              <li key={index} className="flex items-start gap-3">
+              <li key={index} className="flex items-start gap-2">
                 <span className="text-primary font-bold text-lg">•</span>
                 <span className="text-foreground">{point}</span>
               </li>
             ))}
           </ul>
 
-          <div className="border-t border-salmon/30 pt-4 mt-4">
-            <p className="text-primary font-medium">
+          <div className="border-t border-salmon/30 pt-3">
+            <p className="text-2xl font-bold text-purple-600">
               Tu cuerpo no estaba fallando.
               <br />
-              <span className="text-lg">Estaba protegiéndote.</span>
+              Estaba protegiéndote.
             </p>
           </div>
         </div>
