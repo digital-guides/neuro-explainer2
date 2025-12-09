@@ -1,3 +1,5 @@
+import notYourFaultImage from "@/assets/not-your-fault-image.jpg";
+
 const NotYourFaultSection = () => {
   const points = [
     "el cuerpo prioriza supervivencia antes que tranquilidad",
@@ -8,14 +10,19 @@ const NotYourFaultSection = () => {
   return (
     <section className="py-10 px-4">
       <div className="max-w-2xl mx-auto">
+        {/* Image above the section */}
+        <div className="mb-8">
+          <img 
+            src={notYourFaultImage} 
+            alt="Madre e hija - patrones emocionales" 
+            className="w-full h-auto rounded-lg"
+          />
+        </div>
+
         <div className="bg-salmon-light rounded-xl p-6 md:p-8 border-l-4 border-salmon">
-          <h2 className="font-serif text-2xl md:text-3xl text-primary italic mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-salmon italic mb-6">
             No es tu culpa
           </h2>
-          
-          <p className="text-lg text-foreground mb-6">
-            No es tu culpa: tu sistema nervioso estaba haciendo su trabajo.
-          </p>
 
           <p className="text-foreground mb-4">
             Los estudios de <strong className="text-primary">Porges</strong>, <strong className="text-primary">Van der Kolk</strong> y <strong className="text-primary">Barrett</strong> muestran que:
