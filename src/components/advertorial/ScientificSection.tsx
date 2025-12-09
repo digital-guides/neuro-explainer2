@@ -12,6 +12,10 @@ const ScientificSection = () => {
         <h2 className="font-serif text-2xl md:text-3xl text-primary text-center mb-4">
           🧠 La ciencia detrás de los patrones heredados
         </h2>
+        
+        <p className="text-center font-serif text-xl md:text-2xl text-orange-600 italic mb-3">
+          Es neurofisiología.
+        </p>
 
         <div className="space-y-2 text-lg leading-snug">
           <p>

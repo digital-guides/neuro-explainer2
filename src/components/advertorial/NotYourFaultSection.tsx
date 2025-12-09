@@ -38,7 +38,7 @@ const NotYourFaultSection = () => {
           </ul>
 
           <div className="border-t border-salmon/30 pt-3">
-            <p className="text-2xl font-bold text-purple-600">
+            <p className="font-serif text-3xl md:text-4xl text-purple-600 italic">
               Tu cuerpo no estaba fallando.
               <br />
               Estaba protegiéndote.
