@@ -2,56 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 205 52% 23%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 25% 96%;
+    --secondary-foreground: 205 52% 23%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 25% 96%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 8 70% 87%;
+    --accent-foreground: 205 52% 23%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 205 52% 23%;
 
     --radius: 0.5rem;
 
+    /* Custom advertorial colors */
+    --salmon: 8 70% 87%;
+    --salmon-light: 8 60% 94%;
+    --deep-blue: 205 52% 23%;
+    --soft-gray: 210 25% 96%;
+    --teal-cta: 160 60% 40%;
+    --teal-cta-hover: 160 60% 35%;
+
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Open Sans', system-ui, sans-serif;
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -101,5 +104,73 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .title-serif {
+    font-family: var(--font-serif);
+    @apply text-primary font-medium leading-tight;
+  }
+
+  .title-serif-italic {
+    font-family: var(--font-serif);
+    @apply text-primary font-medium italic leading-tight;
+  }
+
+  .body-text {
+    font-family: var(--font-sans);
+    @apply text-foreground leading-relaxed;
+  }
+
+  .highlight-box {
+    @apply bg-salmon-light rounded-lg p-6 border-l-4 border-salmon;
+  }
+
+  .insight-box {
+    @apply bg-salmon-light py-8 px-6 text-center;
+  }
+
+  .chip {
+    @apply inline-block px-4 py-2 rounded-full text-sm font-medium border;
+  }
+
+  .chip-primary {
+    @apply bg-primary/10 text-primary border-primary/20;
+  }
+
+  .chip-accent {
+    @apply bg-accent text-accent-foreground border-accent;
+  }
+
+  .cta-button {
+    @apply bg-teal-cta hover:bg-teal-cta-hover text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .section-divider {
+    @apply w-16 h-1 bg-salmon mx-auto my-8;
+  }
+
+  .quote-box {
+    @apply border-l-4 border-primary pl-4 italic text-muted-foreground;
+  }
+
+  .nervous-system-card {
+    @apply bg-soft-gray rounded-lg p-5 mb-4;
+  }
+
+  .flow-step {
+    @apply px-4 py-2 rounded-full text-sm font-medium;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
