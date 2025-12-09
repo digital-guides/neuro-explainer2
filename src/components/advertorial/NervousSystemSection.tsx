@@ -20,15 +20,15 @@ const NervousSystemSection = () => {
   ];
 
   return (
-    <section className="py-10 px-4">
+    <section className="py-4 px-4">
       <div className="max-w-2xl mx-auto">
-        <h2 className="font-serif text-xl md:text-2xl text-primary mb-6">
+        <h2 className="font-serif text-xl md:text-2xl text-primary mb-3">
           Lo que realmente está pasando en tu sistema nervioso
         </h2>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {states.map((state, index) => (
-            <div key={index} className="bg-soft-gray rounded-lg p-5 flex gap-4">
+            <div key={index} className="bg-soft-gray rounded-lg p-4 flex gap-3">
               <div className="flex-shrink-0">
                 <state.icon className="w-6 h-6 text-primary" />
               </div>
@@ -40,8 +40,8 @@ const NervousSystemSection = () => {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
-          <h3 className="font-serif text-2xl md:text-3xl text-primary mb-2">
+        <div className="mt-4 text-center">
+          <h3 className="font-serif text-2xl md:text-3xl text-primary mb-1">
             No es inestabilidad psicológica.
           </h3>
           <h3 className="font-serif text-2xl md:text-3xl text-primary font-medium">

@@ -10,10 +10,10 @@ const StorytellingSection = () => {
   ];
 
   return (
-    <section className="py-10 px-4">
+    <section className="py-4 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Storytelling intro */}
-        <div className="space-y-6 text-lg leading-relaxed text-foreground">
+        <div className="space-y-2 text-lg leading-snug text-foreground">
           <p>
             Durante años reaccioné sin entender por qué.
             <br />
@@ -46,14 +46,14 @@ const StorytellingSection = () => {
         </div>
 
         {/* Symptoms list */}
-        <div className="mt-10">
-          <p className="text-lg font-medium text-primary mb-4">
+        <div className="mt-4">
+          <p className="text-lg font-medium text-primary mb-2">
             Señales emocionales que vivía sin comprender:
           </p>
           
-          <ul className="space-y-3">
+          <ul className="space-y-1">
             {symptoms.map((symptom, index) => (
-              <li key={index} className="flex items-start gap-3">
+              <li key={index} className="flex items-start gap-2">
                 <span className="text-salmon text-xl mt-0.5">•</span>
                 <span className="text-foreground">{symptom}</span>
               </li>
@@ -62,14 +62,14 @@ const StorytellingSection = () => {
         </div>
 
         {/* Storytelling closure */}
-        <div className="mt-10 space-y-6 text-lg leading-relaxed">
-          <div className="border-l-4 border-salmon pl-5 py-2">
+        <div className="mt-4 space-y-2 text-lg leading-snug">
+          <div className="border-l-4 border-salmon pl-5 py-1">
             <p className="text-primary font-medium">
               El ataque de pánico no llegó por estrés.
               <br />
               Llegó por claridad:
             </p>
-            <p className="text-xl font-serif italic text-primary mt-2">
+            <p className="text-xl font-serif italic text-primary mt-1">
               No estaba viviendo… estaba repitiendo.
             </p>
           </div>
@@ -80,7 +80,7 @@ const StorytellingSection = () => {
             Era un sistema nervioso condicionado por experiencias pasadas que yo no elegí.
           </p>
 
-          <p className="text-lg font-semibold text-primary">
+          <p className="text-2xl font-bold text-orange-500">
             Era supervivencia.
             <br />
             No falla.

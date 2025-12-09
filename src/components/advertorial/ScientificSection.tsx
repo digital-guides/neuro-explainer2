@@ -7,13 +7,13 @@ const ScientificSection = () => {
   ];
 
   return (
-    <section className="py-10 px-4 bg-soft-gray">
+    <section className="py-4 px-4 bg-soft-gray">
       <div className="max-w-2xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl text-primary text-center mb-8">
+        <h2 className="font-serif text-2xl md:text-3xl text-primary text-center mb-4">
           🧠 La ciencia detrás de los patrones heredados
         </h2>
 
-        <div className="space-y-6 text-lg leading-relaxed">
+        <div className="space-y-2 text-lg leading-snug">
           <p>
             Los estudios de <strong className="text-primary">Stephen Porges</strong> (Teoría Polivagal) muestran que el sistema nervioso aprende patrones de seguridad y amenaza a través de las relaciones tempranas.
           </p>
@@ -22,7 +22,7 @@ const ScientificSection = () => {
             Cuando un niño crece en ambientes donde hay tensión, imprevisibilidad o alto estrés emocional, el sistema nervioso puede:
           </p>
 
-          <ul className="space-y-2 pl-4">
+          <ul className="space-y-1 pl-4">
             {effects.map((effect, index) => (
               <li key={index} className="flex items-start gap-3">
                 <span className="text-primary font-bold">•</span>

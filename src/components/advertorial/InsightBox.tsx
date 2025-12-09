@@ -1,7 +1,7 @@
 const InsightBox = () => {
   return (
-    <section className="py-8 px-4 bg-salmon-light">
-      <div className="max-w-2xl mx-auto text-center py-6">
+    <section className="py-4 px-4 bg-salmon-light">
+      <div className="max-w-2xl mx-auto text-center py-3">
         <p className="text-muted-foreground text-sm mb-2">De pronto, todo tenía sentido:</p>
         
         <p className="font-serif text-2xl md:text-3xl text-primary leading-snug">
