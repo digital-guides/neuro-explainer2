@@ -1,9 +1,6 @@
-interface HeroSectionProps {
-  heroImage1?: string;
-  heroImage2?: string;
-}
+import heroImage from "@/assets/hero-image.jpg";
 
-const HeroSection = ({ heroImage1, heroImage2 }: HeroSectionProps) => {
+const HeroSection = () => {
   return (
     <section className="py-10 px-4">
       <div className="max-w-2xl mx-auto text-center">
@@ -20,26 +17,13 @@ const HeroSection = ({ heroImage1, heroImage2 }: HeroSectionProps) => {
           Una explicación basada en neurociencia sobre cómo los patrones emocionales pueden transmitirse sin darnos cuenta.
         </p>
 
-        {/* Hero Images Placeholder */}
-        <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto">
-          <div className="aspect-[3/4] bg-soft-gray rounded-lg overflow-hidden flex items-center justify-center">
-            {heroImage1 ? (
-              <img src={heroImage1} alt="Imagen emocional 1" className="w-full h-full object-cover" />
-            ) : (
-              <div className="text-muted-foreground text-sm text-center p-4">
-                Imagen 1<br />(pendiente)
-              </div>
-            )}
-          </div>
-          <div className="aspect-[3/4] bg-soft-gray rounded-lg overflow-hidden flex items-center justify-center">
-            {heroImage2 ? (
-              <img src={heroImage2} alt="Imagen emocional 2" className="w-full h-full object-cover" />
-            ) : (
-              <div className="text-muted-foreground text-sm text-center p-4">
-                Imagen 2<br />(pendiente)
-              </div>
-            )}
-          </div>
+        {/* Hero Image */}
+        <div className="max-w-2xl mx-auto">
+          <img 
+            src={heroImage} 
+            alt="Madre e hija - patrones emocionales heredados" 
+            className="w-full h-auto rounded-lg"
+          />
         </div>
       </div>
     </section>
