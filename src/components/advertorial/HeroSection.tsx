@@ -2,7 +2,7 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="py-6 px-4">
+    <section className="pt-6 pb-2 px-4">
       <div className="max-w-2xl mx-auto text-center">
         <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary leading-tight mb-3">
           <span className="italic">Cuando escuché mi voz saliendo de su boca,</span>
