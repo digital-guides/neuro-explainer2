@@ -80,7 +80,7 @@ const StorytellingSection = () => {
             Era un sistema nervioso condicionado por experiencias pasadas que yo no elegí.
           </p>
 
-          <p className="text-2xl font-bold text-orange-500">
+          <p className="font-serif text-3xl md:text-4xl text-orange-600 italic">
             Era supervivencia.
             <br />
             No falla.
