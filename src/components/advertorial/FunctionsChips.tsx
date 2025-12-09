@@ -1,11 +1,11 @@
 const FunctionsChips = () => {
   const functions = [
-    "regulación emocional",
-    "tono de voz y reactividad",
-    "percepción de amenaza",
-    "tensión muscular",
-    "vínculo madre-hija",
-    "límites y comunicación",
+    { text: "regulación emocional", bg: "bg-salmon-light", border: "border-salmon/30" },
+    { text: "tono de voz y reactividad", bg: "bg-soft-gray", border: "border-gray-300" },
+    { text: "percepción de amenaza", bg: "bg-orange-100", border: "border-orange-200" },
+    { text: "tensión muscular", bg: "bg-soft-gray", border: "border-gray-300" },
+    { text: "vínculo madre-hija", bg: "bg-purple-100", border: "border-purple-200" },
+    { text: "límites y comunicación", bg: "bg-soft-gray", border: "border-gray-300" },
   ];
 
   return (
@@ -19,9 +19,9 @@ const FunctionsChips = () => {
           {functions.map((func, index) => (
             <span
               key={index}
-              className="inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20 transition-all hover:bg-primary/20"
+              className={`inline-block px-5 py-2.5 rounded-full text-sm font-medium text-primary border transition-all hover:opacity-80 ${func.bg} ${func.border}`}
             >
-              {func}
+              {func.text}
             </span>
           ))}
         </div>
