@@ -4,8 +4,8 @@ const CTASection = () => {
       <div className="max-w-xl mx-auto">
         <div className="bg-salmon-light rounded-2xl p-6 text-center">
           <a
-            href="#test"
-            className="inline-block bg-teal-cta hover:bg-teal-cta-hover text-primary-foreground font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-lg"
+            href="https://nervous-system-test.netlify.app/"
+            className="inline-block bg-teal-cta hover:bg-teal-cta-hover text-primary-foreground font-semibold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
           >
             Haz el Test y descubre tu tipo de desregulación
           </a>
