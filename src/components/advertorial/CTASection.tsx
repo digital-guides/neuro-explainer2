@@ -7,13 +7,7 @@ const CTASection = () => {
         <div className="bg-salmon-light rounded-2xl p-6 text-center">
           <a
             href={url}
-            onClick={(e) => {
-              // If we're inside an iframe (Lovable preview), navigate the top window so the link works.
-              if (window.self !== window.top) {
-                e.preventDefault();
-                window.top.location.href = url;
-              }
-            }}
+            target="_top"
             className="inline-block bg-teal-cta hover:bg-teal-cta-hover text-primary-foreground font-semibold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
           >
             Haz el Test y descubre tu tipo de desregulación
