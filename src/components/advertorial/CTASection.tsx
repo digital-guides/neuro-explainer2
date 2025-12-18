@@ -1,5 +1,5 @@
 const CTASection = () => {
-  const url = "https://navegador-del-sistema-nervioso.lovable.app";
+  const url = "https://nervous-system-navigator.lovable.app/";
 
   return (
     <section className="py-6 px-4">
