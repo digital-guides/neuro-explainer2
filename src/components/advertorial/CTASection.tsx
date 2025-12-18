@@ -2,7 +2,7 @@ import type { MouseEvent } from "react";
 
 const CTASection = () => {
   // ✅ Use the published test URL (avoid “Publish or update…” pages)
-  const url = "https://nervous-system-navigator.lovable.app/";
+  const url = "https://test-sistemanervioso.lovable.app";
 
   const handleNavigate = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
