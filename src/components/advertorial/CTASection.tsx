@@ -1,5 +1,5 @@
 const CTASection = () => {
-  const url = "https://nervous-system-navigator.lovable.app/";
+  const url = "https://test-sistemanervioso.lovable.app";
 
   return (
     <section className="py-6 px-4">
@@ -15,8 +15,8 @@ const CTASection = () => {
 
           <p className="text-sm text-muted-foreground mt-3">
             Este test está basado en modelos de <strong className="text-primary">Porges</strong>,{" "}
-            <strong className="text-primary">Levine</strong> y evidencia actual en regulación autonómica.
-            Te tomará menos de 2 minutos.
+            <strong className="text-primary">Levine</strong> y evidencia actual en regulación autonómica. Te tomará
+            menos de 2 minutos.
           </p>
         </div>
       </div>
@@ -25,4 +25,3 @@ const CTASection = () => {
 };
 
 export default CTASection;
-
