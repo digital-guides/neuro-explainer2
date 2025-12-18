@@ -1,5 +1,19 @@
+import type { MouseEvent } from "react";
+
 const CTASection = () => {
-  const url = "https://test-sistemanervioso.lovable.app";
+  // ✅ Use the published test URL (avoid “Publish or update…” pages)
+  const url = "https://nervous-system-navigator.lovable.app/";
+
+  const handleNavigate = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    // Break out of iframes/previews reliably
+    try {
+      window.top?.location.assign(url);
+    } catch {
+      window.location.assign(url);
+    }
+  };
 
   return (
     <section className="py-6 px-4">
@@ -8,7 +22,9 @@ const CTASection = () => {
           <a
             href={url}
             target="_top"
-            className="inline-block bg-teal-cta hover:bg-teal-cta-hover text-primary-foreground font-semibold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
+            rel="noopener noreferrer"
+            onClick={handleNavigate}
+            className="relative z-10 pointer-events-auto inline-block bg-teal-cta hover:bg-teal-cta-hover text-primary-foreground font-semibold py-4 px-8 rounded-lg transition-colors shadow-lg text-lg"
           >
             Haz el Test y descubre tu tipo de desregulación
           </a>
